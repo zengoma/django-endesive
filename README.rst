@@ -71,6 +71,8 @@ Tools used in rendering this package:
 
 *  Cookiecutter_
 *  `cookiecutter-djangopackage`_
+*  Endesive_
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+.. _Endesive: https://github.com/m32/endesive/blob/master/examples/pdf-sign-cms.py
