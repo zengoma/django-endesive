@@ -1,5 +1,4 @@
 *.py[cod]
-__pycache__
 
 # C extensions
 *.so
@@ -19,6 +18,10 @@ develop-eggs
 lib
 lib64
 
+# Created during tests
+.cache/
+dj_package/
+
 # Installer logs
 pip-log.txt
 
@@ -26,7 +29,6 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
-htmlcov
 
 # Translations
 *.mo
@@ -36,13 +38,20 @@ htmlcov
 .project
 .pydevproject
 
-# Pycharm/Intellij
-.idea
-
 # Complexity
 output/*.html
 output/*/index.html
 
 # Sphinx
 docs/_build
+
+# Cookiecutter
+output/
+dj-package/
+
+# Virtualenv
 venv
+# Temp folders
+temp/*
+.idea
+__pycache__
