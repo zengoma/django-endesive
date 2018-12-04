@@ -52,6 +52,5 @@ dj-package/
 # Virtualenv
 venv
 # Temp folders
-temp/*
 .idea
 __pycache__
