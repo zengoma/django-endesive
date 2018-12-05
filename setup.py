@@ -46,7 +46,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='django-endesive',
-    version=version,
+    version="0.1.0",
     description="""Django endesive PDF digital signing utility.""",
     long_description=readme + '\n\n' + history,
     author='Lance Moore',
