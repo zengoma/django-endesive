@@ -5,7 +5,7 @@ Credits
 Development Lead
 ----------------
 
-* Lance Moore <lance@adminout.net>
+* This project was created by Lance Moore from `Engineer ROI <https://engineerroi.com>`_.
 
 Contributors
 ------------
