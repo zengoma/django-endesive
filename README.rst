@@ -11,7 +11,7 @@ Django Endesive
 .. image:: https://codecov.io/gh/zengoma/django-endesive/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/zengoma/django-endesive
 
-Django endesive PDF digital signing utility. This package allow you to digitally sign a PDF document from your Django
+Django endesive PDF digital signing utility. This package allows you to digitally sign a PDF document from your Django
 application. It is based on https://github.com/m32/endesive
 
 In order to digitally sign your pdf documents you will need a valid p12 / pfx certificate. You can use a self-signed
