@@ -11,7 +11,7 @@ import os
 from django.test import TestCase, override_settings
 from tests.utils.create_test_certs import CreateTestCerts
 from django_endesive import pdf
-from tests import settings
+from django.conf import settings
 from endesive.pdf import fpdf, verify
 
 TEMP_ROOT = settings.TEMP_ROOT
@@ -63,6 +63,12 @@ class TestDjangoEndesive(TestCase):
         self.assertTrue(signatureok, 'There is an error with the signature')
         self.assertTrue(hashok, 'There is an error with the hash')
         self.assertTrue(certok, 'There is an error with the certificate')
+
+    @override_settings()
+    def test_get_settings(self):
+        del settings.DJANGO_ENDESIVE
+        self.assertEqual(pdf.get_settings(), {})
+
 
     def tearDown(self):
         os.remove(self.temp_dir + 'pdf.pdf')
