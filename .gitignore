@@ -54,3 +54,4 @@ venv
 # Temp folders
 .idea
 __pycache__
+:memory:
