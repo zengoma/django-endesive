@@ -49,6 +49,7 @@ def sign(pdf_bytes, sign_date=timezone.now()):
             b'signingdate': pdf_time(sign_date),
             b'reason': reason,
         }
+        password = bytes(password, encoding='utf-8')
         p12 = load_pkcs12(open(cert_path, 'rb').read(), password)
         signature = pdf.cms.sign(pdf_bytes, dct,
                                  p12.get_privatekey().to_cryptography_key(),

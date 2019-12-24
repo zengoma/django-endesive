@@ -69,6 +69,5 @@ class TestDjangoEndesive(TestCase):
         del settings.DJANGO_ENDESIVE
         self.assertEqual(pdf.get_settings(), {})
 
-
     def tearDown(self):
         os.remove(self.temp_dir + 'pdf.pdf')

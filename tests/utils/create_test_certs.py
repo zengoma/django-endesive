@@ -21,9 +21,10 @@ TEMP_ROOT = settings.TEMP_ROOT
     cert2, cert2_key, cert2_pub, cert2_p12
 ) = (
     TEMP_ROOT + file for file in
-    ['demo2_ca.crt.pem', 'demo2_ca.key.pem',
-    'demo2_user1.crt.pem', 'demo2_user1.key.pem', 'demo2_user1.pub.pem', 'demo2_user1.p12',
-    'demo2_user2.crt.pem', 'demo2_user2.key.pem', 'demo2_user2.pub.pem', 'demo2_user2.p12']
+    [
+        'demo2_ca.crt.pem', 'demo2_ca.key.pem', 'demo2_user1.crt.pem', 'demo2_user1.key.pem', 'demo2_user1.pub.pem',
+        'demo2_user1.p12', 'demo2_user2.crt.pem', 'demo2_user2.key.pem', 'demo2_user2.pub.pem', 'demo2_user2.p12'
+    ]
 )
 
 
